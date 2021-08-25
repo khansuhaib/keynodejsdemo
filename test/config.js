@@ -1,4 +1,4 @@
-var baseUrl = 'http://localhost:8180/auth';
+var baseUrl = 'https://keycloak-keycloak2.apps-crc.testing/auth';
 
 module.exports = {
   registration: {
