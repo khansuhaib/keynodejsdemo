@@ -1,8 +1,8 @@
 {
   "realm": "quickstart",
+  "bearer-only": true,
   "auth-server-url": "https://keycloak-keycloak2.apps-crc.testing/auth/",
   "ssl-required": "external",
   "resource": "service-nodejs",
-  "public-client": true,
   "confidential-port": 0
 }
