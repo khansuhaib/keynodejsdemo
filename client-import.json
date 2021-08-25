@@ -1,5 +1,5 @@
 {
-    "clientId": "service-nodejs",
+    "clientId": "web-service1",
     "enabled": true,
     "bearerOnly": true
 }
