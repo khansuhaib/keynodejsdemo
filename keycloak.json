@@ -2,9 +2,9 @@
   "realm": "myrealm",
   "auth-server-url": "https://keycloak-keycloak2.apps-crc.testing/auth/",
   "ssl-required": "external",
-  "resource": "web-app1",
+  "resource": "web-service1",
   "credentials": {
-    "secret": "ecaf26d6-cb76-4cd8-ab1b-38309a5610fc"
+    "secret": "66992168-f187-4314-b8a6-f6cfefb28edb"
   },
   "confidential-port": 0
 }
