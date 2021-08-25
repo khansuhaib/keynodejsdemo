@@ -8,7 +8,7 @@ const tokenRequester = require('keycloak-request-token');
 
 test('Should test public route with no credentials.', t => {
   const options = {
-    'endpoint': 'http://localhost:3000/service/public'
+    'endpoint': 'http://keynodejsdemo-git-keytest.apps-crc.testing/service/public'
   };
 
   roi.get(options)
@@ -24,7 +24,7 @@ test('Should test public route with no credentials.', t => {
 
 test('Should test secured route with no credentials.', t => {
   const options = {
-    'endpoint': 'http://localhost:3000/service/secured'
+    'endpoint': 'http://keynodejsdemo-git-keytest.apps-crc.testing/service/secured'
   };
 
   roi.get(options)
@@ -39,7 +39,7 @@ test('Should test secured route with no credentials.', t => {
 
 test('Should test admin route with no credentials.', t => {
   const options = {
-    'endpoint': 'http://localhost:3000/service/admin'
+    'endpoint': 'http://keynodejsdemo-git-keytest.apps-crc.testing/service/admin'
   };
 
   roi.get(options)
@@ -58,7 +58,7 @@ registration.create(config.registration, config.testClient).then((v) => {
   test('Should test secured route with user credentials.', t => {
     tokenRequester(config.baseUrl, config.token).then((token) => {
       var opt = {
-        endpoint: 'http://localhost:3000/service/secured',
+        endpoint: 'http://keynodejsdemo-git-keytest.apps-crc.testing/service/secured',
         headers: {
           Authorization: 'Bearer ' + token
         }
@@ -79,7 +79,7 @@ registration.create(config.registration, config.testClient).then((v) => {
     config.token.username = 'test-admin';
     tokenRequester(config.baseUrl, config.token).then((token) => {
       var opt = {
-        endpoint: 'http://localhost:3000/service/admin',
+        endpoint: 'http://keynodejsdemo-git-keytest.apps-crc.testing/service/admin',
         headers: {
           Authorization: 'Bearer ' + token
         }
