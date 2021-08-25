@@ -33,7 +33,7 @@ app.use(cors());
 var memoryStore = new session.MemoryStore();
 
 app.use(session({
-  secret: 'some secret',
+  secret: '66992168-f187-4314-b8a6-f6cfefb28edb',
   resave: false,
   saveUninitialized: true,
   store: memoryStore
